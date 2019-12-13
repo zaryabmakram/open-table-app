@@ -13,12 +13,12 @@ import {
 
 const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <QRScanner />
-      </SafeAreaView>
-    </>
+    // <>
+    //   <StatusBar barStyle="dark-content" />
+    //   <SafeAreaView>
+    //   </SafeAreaView>
+    // </>
+      <QRScanner />
   );
 };
 
