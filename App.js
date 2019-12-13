@@ -1,4 +1,6 @@
 import React from 'react';
+import QRScanner from './ScanScreen'
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -14,7 +16,7 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Text>Hello Zaryab</Text>
+        <QRScanner />
       </SafeAreaView>
     </>
   );
