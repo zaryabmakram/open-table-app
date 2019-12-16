@@ -20,10 +20,10 @@ const s = StyleSheet.create({
     },
     label: {
         color: "black",
-        fontSize: 12,
+        fontSize: 16,
     },
     input: {
-        fontSize: 16,
+        fontSize: 14,
         color: "black",
     },
     inputContainer: {
@@ -50,7 +50,7 @@ export default function PaymentScreen(props) {
         ) proceed = false;
 
         if (proceed) {
-            console.log(JSON.stringify(cardData, null, " "));
+            console.log(JSON.stringify(cardData["values"], null, " "));
         } else {
             ToastAndroid.show('Incomplete Information!', ToastAndroid.SHORT);
         }
@@ -69,7 +69,6 @@ export default function PaymentScreen(props) {
             </Header>
             <Content style={s.container} contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}>
                 <CreditCardInput
-                    autoFocus
                     requiresName
                     requiresCVC
                     labelStyle={s.label}
