@@ -1,5 +1,6 @@
 import React from 'react';
 import QRScanner from './ScanScreen'
+import PaymentScreen from './PaymentScreen'
 
 import {
   SafeAreaView,
@@ -18,7 +19,8 @@ const App = () => {
     //   <SafeAreaView>
     //   </SafeAreaView>
     // </>
-      <QRScanner />
+    // <QRScanner />
+    <PaymentScreen />
   );
 };
 
